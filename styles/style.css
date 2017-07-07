@@ -2,3 +2,30 @@
   margin: 0;
   padding: 0;
 }
+
+body{
+  background-color: #fff;
+  /*color: #6b7b84;*/
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+p{
+  color: #6b7b84;
+  font-size: 16px;
+}
+
+#bannerImage{
+  background-image: url(../styles/images/laundrybanner.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*display: flex;*/
+  height: 485px;
+  max-width: 100%;
+  /*position: relative;*/
+  /*overflow: hidden;*/
+}
+
+/*font-family: 'Montserrat', sans-serif;*/
