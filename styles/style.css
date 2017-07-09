@@ -38,6 +38,10 @@ form{
   padding: 20px;
 }
 
+.center{
+  text-align: center; 
+}
+
 #bannerImage{
   background-image: url(../styles/images/laundrybanner.jpg);
 }

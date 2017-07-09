@@ -27,6 +27,18 @@ function eventListener(){
 
 // gatherData
 function gatherData(){
+
+  var formDataObject = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    company: '',
+    title: '',
+    country: '',
+    state: '',
+    comments: ''
+  };
+
   console.log("you are inside gatherData");
   console.log("here is your object", formDataObject);
   formDataObject.firstName = $('#inputFirstName').val();
@@ -38,12 +50,12 @@ function gatherData(){
   formDataObject.state = $('#inputState').val();
   formDataObject.comments = $('#inputComments').val();
   console.log("here is your object again", formDataObject);
-  displayFormData();
+  displayFormData(formDataObject);
 }
 
 // display object
-function displayFormData(){
-  console.log("you are inside displayFormData");
+function displayFormData(formDataObject){
+  console.log("you are inside displayFormData", formDataObject);
 }
 
 // clear form
