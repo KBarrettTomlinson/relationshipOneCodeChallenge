@@ -26,6 +26,7 @@
 
   <body>
     <div class = "container">
+      <!-- logo -->
       <div class = "row">
         <div id = "relationshipOneLogo" class = "col-md-12 content">
         <a href="http://www.relationshipone.com/" target="_blank"><img src="styles/images/R1_Logo_Horizontal.png" alt="Relationship One"></a>
@@ -33,14 +34,15 @@
       </div>
     </div>
 
+    <!-- banner -->
     <div id = "bannerImage" class = "jumbotron background-image">
       <div class = "container">
       </div>
     </div>
 
     <div class = "container">
+      <!-- paragraph-->
       <div class = "row">
-        <!-- paragraph column -->
         <div class = "col-md-6 content">
           <h2>Tired of Losing Your Socks?</h2>
           <hr />
@@ -54,7 +56,7 @@
           </p>
         </div>
 
-        <!-- form column -->
+        <!-- form -->
         <div class = "col-md-6 content">
           <h2>We Can Help!</h2>
           <hr />
@@ -481,52 +483,57 @@
         </div>
       </div>
 
+      <!-- output table -->
       <div class = "row">
-        <!-- display row -->
         <div class = "col-md-offset-3 col-md-6 content">
           <h2>Is This Correct?</h2>
           <hr />
           <!-- table column -->
-          <table class="table table-bordered">
-            <!-- firstName lastName -->
-            <tr>
-              <th> First and Last Name</th>
-              <td>Keith Tomlinson</td>
+          <table id = "outputTable" class="table table-bordered">
+            <!-- firstName -->
+            <tr id = "firstNameRow">
+              <th>First Name</th>
+              <td id = "firstNameOutput"></td>
+            </tr>
+            <!-- lastName -->
+            <tr id = "lastNameRow">
+              <th>Last Name</th>
+              <td id = "lastNameOutput"></td>
             </tr>
             <!-- email -->
-            <tr>
-              <th> First and Last Name</th>
-              <td>Keith Tomlinson</td>
+            <tr id = "emailRow">
+              <th>Email</th>
+              <td id = "emailOutput"></td>
             </tr>
             <!-- company -->
-            <tr>
-              <th> First and Last Name</th>
-              <td>Keith Tomlinson</td>
+            <tr id = "companyRow">
+              <th>Company</th>
+              <td id = "companyOutput"></td>
             </tr>
             <!-- title -->
-            <tr>
-              <th> First and Last Name</th>
-              <td>Keith Tomlinson</td>
+            <tr id = "titleRow">
+              <th>Title</th>
+              <td id = "titleOutput"></td>
             </tr>
             <!-- country -->
-            <tr>
-              <th> First and Last Name</th>
-              <td>Keith Tomlinson</td>
+            <tr id = "countryRow">
+              <th>Country</th>
+              <td id = "countryOutput"></td>
             </tr>
             <!-- state -->
-            <tr>
-              <th> First and Last Name</th>
-              <td>Keith Tomlinson</td>
+            <tr id = "stateRow">
+              <th>State</th>
+              <td id = "stateOutput"></td>
             </tr>
             <!-- Additional Comments -->
-            <tr>
-              <th> First and Last Name</th>
-              <td>Keith Tomlinson</td>
+            <tr id = "commentsRow">
+              <th>Additional Comments</th>
+              <td id = "commentsOutput"></td>
             </tr>
           </table>
           <div class = "row center">
-            <button type="button" class="btn btn-success">Save and Clear</button>
-            <button type="button" class="btn btn-danger">Delete and Clear</button>
+            <button id = "saveAndClear" type="button" class="btn btn-success">Save and Clear</button>
+            <button id = "deleteAndClear" type="button" class="btn btn-danger">Delete and Clear</button>
           </div>
 
         </div>
