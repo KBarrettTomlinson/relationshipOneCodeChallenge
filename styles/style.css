@@ -22,10 +22,16 @@ p{
   text-align: justify;
 }
 
+form{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
 .background-image{
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 485px;
 }
 
 .content{
