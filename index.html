@@ -58,7 +58,7 @@
         <div class = "col-md-6 content">
           <h2>We Can Help!</h2>
           <hr />
-          <form>
+          <form id = "infoForm">
             <div class = "row">
               <!-- first name -->
               <div class="form-group col-md-6">
@@ -92,7 +92,7 @@
               <!-- country -->
               <div class="form-group col-md-6">
                 <label for="inputCountry">Country</label>
-                <select class="form-control" required>
+                <select class="form-control" id="inputCountry" required>
                   <option value="Please select">Please select</option>
                   <option value="United States">United States</option>
                   <option value="United Kingdom">United Kingdom
@@ -413,7 +413,7 @@
               <!-- state -->
               <div class="form-group col-md-6">
                 <label for="inputState">State </label>
-                <select class="form-control" required>
+                <select class="form-control" id="inputState" required>
                   <option value="">Please Select</option>
                   <option value="Alabama">Alabama</option>
                   <option value="Alaska">Alaska</option>
@@ -473,7 +473,7 @@
             <!-- additional comments -->
             <div class="form-group">
               <label for="inputAdditionalComments">Additional Comments</label>
-              <textarea class="form-control" rows="3"></textarea>
+              <textarea class="form-control" rows="3" id="inputComments"></textarea>
             </div>
             <!-- submit -->
             <button type="submit" class="btn btn-default">Submit</button>
