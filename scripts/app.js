@@ -58,12 +58,17 @@ function displayTable(){
     console.log("key then value", key, value);
     if (value === ''){
       //hide the row
+      $( '#'+key+'Row').hide();
     }
     else{
       //append value to the table
+      $( '#'+key+'Output').text(value);
     }
   });//ends each loop
-
+  $( '#confirmDiv' ).show();
+  $('html, body').animate({
+    scrollTop: $("#confirmDiv").offset().top
+  }, 1000);
 }
 
 // save data
@@ -102,4 +107,11 @@ function clearForm(){
 // hide table
 function hideTable(){
   console.log("inside hideTable");
+  $.each(formDataObject, function(key, value){
+      $( '#'+key+'Row').show();
+  });//ends each loop
+  $('html, body').animate({
+    scrollTop: $("#contentContainer").offset().top
+  }, 1000);
+  $( '#confirmDiv' ).hide();
 }
